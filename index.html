@@ -14,17 +14,36 @@
       <label class="tab" for="tab-1">Register</label>
       <label class="tab" for="tab-2">Login</label>
       <div class="content content-1">
-        <form action="" method="">
-          <fieldset>
-            <legend>Your Details:</legend>
-            <label>Firstname:</label>
-              <input type="text" name="firstname" size="30" maxlength="100">
-            <label>Lastname:</label>
-              <input type="text" name="lastname" size="30" maxlength="100">
-            <label>Email:</label>
-              <input type="email" name="email" size="30" maxlength="100">
+        <form action="/" method="POST">
+          <div class="block">
+            <label for="username">Username:</label>
+              <input type="text" name="username" id="username" size="30" maxlength="100">
+          </div>
+          <div class="block">
+            <label for="email">Email:</label>
+              <input type="email" name="email" id="email" size="30" maxlength="100">
+          </div>
+          <div class="block">
+            <label>Gender:</label>
+              <input type="radio" name="gender" value="Male">Male
+              <input type="radio" name="gender" value="Female">Female
+              <input type="radio" name="gender" value="Other">Other
+          </div>
+          <div class="block">
+            <label>Country</label>
+              <select name="country">
+                <option value="au">Australia</option>
+                <option value="ca">Canada</option>
+                <option value="is">Iceland</option>
+                <option value="ie">Ireland</option>
+                <option value="uk">UK</option>
+              </select>
+          </div>
+          <div class="block">
+            <input type="checkbox" name="terms">
+            <label>I agree with terms and conditions</label>  
+          </div>
             <input type="submit" value="Submit">
-          </fieldset>
         </form>
       </div>
       <div class="content content-2">Content 2</div>

@@ -61,3 +61,7 @@ body {
 #tab-1:checked ~ .content-1, #tab-2:checked ~ .content-2 {
   display: block;
 }
+
+.block {
+  display: block;
+}
